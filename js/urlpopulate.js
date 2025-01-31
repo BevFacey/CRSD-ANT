@@ -1,4 +1,5 @@
 function populateFromURL () {
+  /*
   var params_string = sessionStorage.getItem("urlParams")
   var params_string_list = params_string.split("&");
   var params = {};
@@ -34,4 +35,5 @@ function extractFromURL() {
   var url = window.location.href
   var urlParams = url.split("?")[1];
   sessionStorage.setItem("urlParams", urlParams);
+  */
 }
