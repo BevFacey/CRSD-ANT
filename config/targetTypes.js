@@ -1,1 +1,1 @@
-var stimList = ["Arrow", "Truck", "Hand", "Airplane", "Car"];
+var stimList = ["Arrow"];
