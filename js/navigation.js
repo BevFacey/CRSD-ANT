@@ -21,7 +21,7 @@ var viewStack = new Array();
 var setupData = [];
 var resultsData = [];
 var testBlock = 0;
-var numberOfTestBlocks = 4; // Test Block Size
+var numberOfTestBlocks = 0; // Test Block Size
 
 function getInputData() {
 	id = document.getElementById('ID').value;
@@ -32,15 +32,15 @@ function getInputData() {
 	for (var i=0; i < document.form.gender.length; i++) {
 	   if (document.form.gender[i].checked) {
 	      gender = document.form.gender[i].value;
-	   }
-*/	   
+	   }	   
 	sessionNumber = document.getElementById('sessionNumber').value;
 	studyID = document.getElementById('studyID').value;
 	groupID = document.getElementById('groupID').value;
+ */
 	targetType = document.getElementById('targetType').value;
 	monitorSize = document.getElementById('monitorSize').value;
 	ppi = calculatePPI();
-	setupData = [id, genre, participantClass, sessionNumber, studyID, groupID, targetType, new Date(), 'endDate', monitorSize, ppi];
+	setupData = [id, genre, participantClass, 0, 0, 0, targetType, new Date(), 'endDate', monitorSize, ppi];
 	setupDisplay();
 }
 
