@@ -36,10 +36,10 @@
 			<p>Please enter the following information:</p>
 			</center>
 			<form name="form" id="form">
-				<label>ID:</label>
+				<label>Participant #:</label>
 				<input type="text" name="ID" id="ID" required/>
 				<br />
-				<label>Session #:</label>
+<!--				<label>Session #:</label>
 				<input type="text" name="sessionNumber" id="sessionNumber" required/>
 				<br />
 				<label>Study ID:</label>
@@ -75,11 +75,31 @@
 							<input type="radio" name="gender" value="X" />Prefer not to say
 						</td>
 					</tr>
+				
 				</table>
+-->				
+				<label>Music Genre:</label>
+				<select name="Genre" id="Genre">
+					<option value="Silence" selected>Silence</option>
+					<option value="Pop">Pop</option>
+					<option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
+				</select>
+				<br />
+
+				<label>Class:</label>
+				<select name="ParticipantClass" id="ParticipantClass">
+					<option value="30-1 AP" selected>30-1 AP</option>
+					<option value="20-1">20-1</option>
+					<option value="20-2">20-2</option
+					<option value="20-3">20-3</option
+				</select>
+				<br />
+		
 				<label>Target Type:</label>
 				<select name="targetType" id="targetType" size="1">
 				</select>
 				<br />
+				
 				<label>Monitor Diagonal:</label>
 				<select name="monitorSize" id="monitorSize">
 					<option value="7">7"</option>
@@ -107,8 +127,8 @@
 					<option value="29">29"</option>
 					<option value="30">30"</option>
 				</select>
-
 				<br />
+				
 			</form>
 			<center>
 			<p id="fullscreenNote">For best experience, use fullscreen (<span class='fullscreenKey'>F11</span>)</p>
