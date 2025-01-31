@@ -1,5 +1,6 @@
 var softwareVersion = '0.1';
 
+/*
 var id;
 var age;
 var gender;
@@ -7,6 +8,10 @@ var sessionNumber;
 var studyID;
 var targetType;
 var monitorSize;
+//*/
+var participantNumber;
+var participantClass;
+var music;
 
 var ppi;
 var frameWidth;
@@ -24,6 +29,7 @@ var testBlock = 0;
 var numberOfTestBlocks = 4; // Test Block Size
 
 function getInputData() {
+	/*
 	id = document.getElementById('ID').value;
 	age = document.getElementById('age').value;
 	for (var i=0; i < document.form.gender.length; i++) {
@@ -38,6 +44,11 @@ function getInputData() {
 	monitorSize = document.getElementById('monitorSize').value;
 	ppi = calculatePPI();
 	setupData = [id, age, gender, sessionNumber, studyID, groupID, targetType, new Date(), 'endDate', monitorSize, ppi];
+	//*/
+	participantNumber = document.getElementById('participantNumber').value;
+	participantClass = document.getElementById('participantClass').value;
+	music = document.getElementById('music').value;
+	setupData = [participantNumber, participantClass, music];
 	setupDisplay();
 }
 

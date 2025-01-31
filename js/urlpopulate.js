@@ -1,4 +1,5 @@
 function populateFromURL () {
+  /*
   var params_string = sessionStorage.getItem("urlParams")
   var params_string_list = params_string.split("&");
   var params = {};
@@ -8,6 +9,7 @@ function populateFromURL () {
   }
   
   // Set the parameters if they are in the session data and mark as read-only
+  
   if(params.ID) {
     document.getElementById('ID').value = params.ID;
     document.getElementById('ID').readOnly = true;
@@ -27,7 +29,7 @@ function populateFromURL () {
   if(params.groupID) {
     document.getElementById('groupID').value = params.groupID;
     document.getElementById('groupID').readOnly = true;
-  }
+  }//*/
 }
 
 function extractFromURL() {

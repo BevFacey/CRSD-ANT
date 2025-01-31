@@ -56,7 +56,7 @@ function setupDisplay() {
 			elements[i].style.width = ""+targetWidth+"px";
 			elements[i].style.height = ""+targetHeight+"px";
 		}else if(targetTypeRefRegex.test(elements[i].className)) {	//Stimulus Type
-			elements[i].innerHTML = targetType.toLowerCase();
+			elements[i].innerHTML = targetType;//.toLowerCase();
 		}else if(displayRegex.test(elements[i].className)) {		//Display
 			elements[i].style.width = ""+frameWidth+"px";
 			elements[i].style.height = ""+frameHeight+"px";
