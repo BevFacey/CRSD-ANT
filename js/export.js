@@ -32,7 +32,8 @@ function createDownloadLink(divName,exportFilename,data,downloadLinkText) {
 //Generates the flash links and the textual new-window links from the data.
 function generateExportLink(data) {
 	setupData[8] = new Date();
-	fileName = setupData[0]+' - '+(setupData[8].getFullYear())+'-'+pad((setupData[8].getMonth()+1),2)+'-'+pad((setupData[8].getDate()),2);
+//	fileName = setupData[0]+' - '+(setupData[8].getFullYear())+'-'+pad((setupData[8].getMonth()+1),2)+'-'+pad((setupData[8].getDate()),2);
+	fileName = setupData[0]+' - '+setupData[1]+' - '+setupData[2]	
 	
 	var csvData = generateData(setupData,data)
 	var csvSummary = generateSummary(setupData,data)
