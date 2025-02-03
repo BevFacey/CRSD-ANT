@@ -40,6 +40,9 @@ function getInputData() {
 	targetType = document.getElementById('targetType').value;
 	monitorSize = document.getElementById('monitorSize').value;
 	ppi = calculatePPI();
+	sessionNumber = 1;
+	studyID = 1;
+	groupID = 1;
 	setupData = [id, genre, participantClass, 0, 0, 0, targetType, new Date(), 'endDate', monitorSize, ppi];
 	setupDisplay();
 }
