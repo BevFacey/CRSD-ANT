@@ -25,6 +25,7 @@ var numberOfTestBlocks = 4; // Test Block Size
 
 function getInputData() {
 	id = document.getElementById('ID').value;
+	/*
 	age = document.getElementById('age').value;
 	for (var i=0; i < document.form.gender.length; i++) {
 	   if (document.form.gender[i].checked) {
@@ -36,6 +37,15 @@ function getInputData() {
 	groupID = document.getElementById('groupID').value;
 	targetType = document.getElementById('targetType').value;
 	monitorSize = document.getElementById('monitorSize').value;
+	//*/
+	age = 16;
+	gender = 'X';
+	sessionNumber = 1;
+	studyID = 1;
+	groupID = 1;
+	targetType = document.getElementById('targetType').value;
+	monitorSize = 21;
+
 	ppi = calculatePPI();
 	setupData = [id, age, gender, sessionNumber, studyID, groupID, targetType, new Date(), 'endDate', monitorSize, ppi];
 	setupDisplay();
