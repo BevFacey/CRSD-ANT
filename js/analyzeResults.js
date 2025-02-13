@@ -55,7 +55,7 @@ function generateSummary(userInfo, results) {
 
 	var summary = [];
 	//The first row is the headers
-	summary[0] = ['uniqueID','studyID','ANTversion','targFile','ANTdate','ANTtime','SessionDur','Session','Age','Sex','Group','ANT.N','med.all','mean.all','sd.all','min.all','max.all','alert','orient','conflict','pc.all','e.all','nocue','double','centre','spatial','cong','incong','med.C1T1','med.C1T2','med.C2T1','med.C2T2','med.C3T1','med.C3T2','med.C4T1','med.C4T2','mean.C1T1','mean.C1T2','mean.C2T1','mean.C2T2','mean.C3T1','mean.C3T2','mean.C4T1','mean.C4T2','e.nocue','e.double','e.centre','e.spatial','e.incong','e.cong','pc.C1T1','pc.C1T2','pc.C2T1','pc.C2T2','pc.C3T1','pc.C3T2','pc.C4T1','pc.C4T2']
+	summary[0] = ['uniqueID','studyID','ANTversion','targFile','ANTdate','ANTtime','SessionDur','Session','Genre','Course','Group','ANT.N','med.all','mean.all','sd.all','min.all','max.all','alert','orient','conflict','pc.all','e.all','nocue','double','centre','spatial','cong','incong','med.C1T1','med.C1T2','med.C2T1','med.C2T2','med.C3T1','med.C3T2','med.C4T1','med.C4T2','mean.C1T1','mean.C1T2','mean.C2T1','mean.C2T2','mean.C3T1','mean.C3T2','mean.C4T1','mean.C4T2','e.nocue','e.double','e.centre','e.spatial','e.incong','e.cong','pc.C1T1','pc.C1T2','pc.C2T1','pc.C2T2','pc.C3T1','pc.C3T2','pc.C4T1','pc.C4T2']
 	summary[1] = [];
 	summary[1][0] = userInfo[0];							//userID
 	summary[1][1] = userInfo[4];							//studyID
@@ -154,7 +154,7 @@ function generateSummary(userInfo, results) {
 function generateData(userInfo, results) {
 	var outputResults = [];
 	//The first row is the headings
-	outputResults[0] = ['uniqueID','StudyNum','age','sex','group','targFile','Date','block','trial','CueType','TargLoc','TargDirection','Congruency','TrialStartTime','targetOnTime','firstFix','Response','Correct','RT','LowRT'];
+	outputResults[0] = ['uniqueID','StudyNum','genre','course','group','targFile','Date','block','trial','CueType','TargLoc','TargDirection','Congruency','TrialStartTime','targetOnTime','firstFix','Response','Correct','RT','LowRT'];
 	destinationRow=1;												//We've already filled in outputResults[0], so we'll start from 1
 	for (sourceTest in results) {			//The test number (should only be 0,1,2)
 		for (sourceTrial in results[sourceTest]) {	//The trial within that test (32/test)
